@@ -14,6 +14,10 @@ import { TeamComponent } from './team/team.component';
 import { ClientsComponent } from './clients/clients.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { BoxComponent } from './services/box/box.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -28,11 +32,14 @@ import { FooterComponent } from './footer/footer.component';
     TeamComponent,
     ClientsComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    BoxComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule, 
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
