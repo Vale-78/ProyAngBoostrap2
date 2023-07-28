@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
 export class BoxComponent {
   @Input() delay:string='';
   @Input() titulo:string='';
-  @Input() text:string='';
+  @Input() texto:string='';
   @Input() icono:string='';
   @Input() color:string='';
 
