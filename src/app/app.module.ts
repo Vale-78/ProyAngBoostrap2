@@ -18,6 +18,8 @@ import { BoxComponent } from './services/box/box.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { BoxAboutComponent } from './about/box-about/box-about.component';
 
 @NgModule({
   declarations: [
@@ -33,13 +35,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ClientsComponent,
     ContactComponent,
     FooterComponent,
-    BoxComponent
+    BoxComponent,
+    BoxAboutComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule, 
     BrowserAnimationsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
