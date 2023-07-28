@@ -11,6 +11,8 @@ export class BoxComponent {
   @Input() texto:string='';
   @Input() icono:string='';
   @Input() color:string='';
+  @Input() offsetCol:string='';
+
 
   constructor(){
   }
