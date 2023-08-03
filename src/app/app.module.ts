@@ -20,6 +20,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { BoxAboutComponent } from './about/box-about/box-about.component';
+import { OnePostComponent } from './one-post/one-post.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { BoxAboutComponent } from './about/box-about/box-about.component';
     FooterComponent,
     BoxComponent,
     BoxAboutComponent,
+    OnePostComponent,
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,10 @@
             <h3>About Us</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </header>
-          <app-box-about *ngFor="let post of posts" [titulo]="post.title" [texto]="post.body"></app-box-about>
+          <app-box-about 
+            *ngFor="let post of posts"  
+            [titulo]="post.title" 
+            [texto]="post.body">
+          </app-box-about>
       </div>
     </section><!-- #about -->

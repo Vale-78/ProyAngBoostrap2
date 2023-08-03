@@ -1,0 +1,25 @@
+<div>
+    <title>{{post.title}}</title>
+    <p>{{post.body}}</p>
+    <hr>
+    <h3>Comentarios del post</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Comentarios</th>
+
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr *ngFor="let comment of comments">
+                <td>{{comment.name}}</td>
+                <td>{{comment.email}}</td>
+                <td>C{{comment.body}}</td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>

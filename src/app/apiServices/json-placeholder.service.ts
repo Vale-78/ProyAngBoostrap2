@@ -13,6 +13,18 @@ export class JsonPlaceholderService {
     allPost(){
       return this.http.get(this.url + 'posts')
     }
+
+    onePost(id:number){
+      // const postUrl = '${this.url}/post/${id}';
+      // return this.http.get(postUrl);
+      return this.http.get(this.url + 'posts/' + id);
+    }
+
+     commentPost(id:number){
+      return this.http.get(this.url + 'posts/' + id +'comments' );
+ 
+
+    }
   
     allAlbum(){
       return this.http.get(this.url + 'albums')
