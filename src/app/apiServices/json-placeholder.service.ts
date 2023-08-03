@@ -20,13 +20,13 @@ export class JsonPlaceholderService {
       return this.http.get(this.url + 'posts/' + id);
     }
 
-     commentPost(id:number){
-      return this.http.get(this.url + 'posts/' + id +'comments' );
+     commentsPost(id:number){
+      return this.http.get(this.url + 'posts/' + id + '/comments' );
  
 
     }
   
-    allAlbum(){
+    allAlbumes(){
       return this.http.get(this.url + 'albums')
     }
 }

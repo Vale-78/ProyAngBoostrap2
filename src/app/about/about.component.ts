@@ -10,8 +10,8 @@ import { JsonPlaceholderService } from '../apiServices/json-placeholder.service'
 export class AboutComponent {
 posts:any = [];
 
-  constructor(private JsonPlaceholderService:JsonPlaceholderService){
-    this.JsonPlaceholderService.allPost().subscribe(data => {
+  constructor(private jsonPlaceholderService:JsonPlaceholderService){
+    this.jsonPlaceholderService.allPost().subscribe(data => {
       this.posts = data;
 
     })

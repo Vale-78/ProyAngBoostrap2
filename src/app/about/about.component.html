@@ -5,10 +5,16 @@
             <h3>About Us</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </header>
-          <app-box-about 
+          
+          <!-- cargo las variables que usaré en box-about y las exporto con impot en box-about.comp.ts -->
+          <app-box-about    
             *ngFor="let post of posts"  
+            [delay]="'0'" 
             [titulo]="post.title" 
-            [texto]="post.body">
+            [texto]="post.body"
+            [id]="post.id"
+            [icono]="'ion-ios-analytics-outline'">
+            
           </app-box-about>
       </div>
     </section><!-- #about -->

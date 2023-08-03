@@ -1,6 +1,7 @@
-<div>
-    <title>{{post.title}}</title>
-    <p>{{post.body}}</p>
+<div class="container">
+    <h4>{{post?.title}}</h4>
+    <!-- el signo de pregunta indica: si no tiene título o cuerpo, no imprime nada. Sino, imprime el valor -->
+    <p>{{post?.body}}</p>
     <hr>
     <h3>Comentarios del post</h3>
     <table class="table">
